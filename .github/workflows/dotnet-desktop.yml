@@ -19,6 +19,6 @@ jobs:
     - name: Install dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --configuration Release ./saucelabchallenge/SauceLabChallenge/SauceLabChallenge.csproj
+      run: dotnet build --configuration Release ./SauceLabChallenge/SauceLabChallenge.csproj
     - name: Test
       run: dotnet test --no-restore --verbosity normal
