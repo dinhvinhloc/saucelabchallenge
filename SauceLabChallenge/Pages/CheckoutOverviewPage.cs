@@ -1,23 +1,19 @@
 ﻿
-using Microsoft.VisualStudio.TestPlatform.CommunicationUtilities;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using SauceLabChallenge.Base;
 using SeleniumExtras.PageObjects;
-using SeleniumExtras.WaitHelpers;
 
 namespace SauceLabChallenge.Pages
 {
     public class CheckoutOverviewPage : BasePage
     {
         private IWebDriver driver;
-        private WebDriverWait wait;
 
 
         public CheckoutOverviewPage(IWebDriver driver)
         {
             this.driver = driver;
-            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
             PageFactory.InitElements(driver, this);
         }
 

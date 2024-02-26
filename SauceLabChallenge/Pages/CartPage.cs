@@ -1,6 +1,5 @@
 ﻿
 using System.Collections.ObjectModel;
-using Microsoft.VisualStudio.TestPlatform.CommunicationUtilities;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using SauceLabChallenge.Base;
