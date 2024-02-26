@@ -29,6 +29,10 @@
     <PackageReference Include="DotNetSeleniumExtras.PageObjects.Core.Linq" Version="1.0.0" />
     <PackageReference Include="SeleniumExtras.WaitHelpers" Version="1.0.2" />
     <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
