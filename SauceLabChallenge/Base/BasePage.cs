@@ -1,6 +1,7 @@
 ﻿using System;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using WebDriverManager.DriverConfigs.Impl;
 
 namespace SauceLabChallenge.Base
 {
@@ -11,7 +12,14 @@ namespace SauceLabChallenge.Base
         public static IWebDriver driver;
 		public void Initialize()
 		{
-			driver = new ChromeDriver();
+            // Configure ChromeOptions for headless mode
+            ChromeOptions options = new ChromeOptions();
+            options.AddArgument("--no-sandbox");
+            options.AddArgument("--disable-dev-shm-usage");
+            options.AddArgument("--headless");
+
+            driver = new ChromeDriver(options);
+
 			driver.Navigate().GoToUrl("https://www.saucedemo.com/");
 			//driver.Manage().Window.Maximize();
 		}
